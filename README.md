@@ -1,6 +1,6 @@
 # Azure Shop
 
-You can go to project live [Azure Shop](https://azure-shop.netlify.app/), [API](https://documenter.getpostman.com/view/20256803/2s93sW9Fnz) and [APK](https://expo.dev/accounts/mahmoudkandel/projects/mobile/builds/8c9f3a8b-5fd6-4386-b67c-31ff7156935e).
+You can go to project live [Azure Shop](https://azure-shop.netlify.app/), [API](https://documenter.getpostman.com/view/20256803/2s93sW9Fnz) and [APK](https://expo.dev/accounts/mahmoudkandel/projects/mobile/builds/e5163f8f-901d-425d-8d1c-9120f8b0099f).
 
 **Azure Shop is a full stack realtime E-commerce mobile and web application using**
 
@@ -16,6 +16,12 @@ You can go to project live [Azure Shop](https://azure-shop.netlify.app/), [API](
 -   Stripe - Cloudinary.
 
 <br/>
+
+**Test Moderator**
+
+-   Email : moderator@azure.com
+-   Password : 12345678
+-   Note You can not change password, update password, change any user data by this account (This account for development purposes).
 
 **Special features in Azure shop application**
 
