@@ -1,0 +1,209 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+@layer components {
+    .profile-model {
+        @apply dark:hover:bg-smothDark hover:bg-[#ebebeb] flex items-center justify-start space-x-1.5 pl-4 w-full py-1 duration-100 cursor-pointer;
+    }
+    .register-input {
+        @apply w-full border-[1px] p-1 py-1 rounded-md border-lightDark/20 dark:border-lightDark dark:bg-smothDark placeholder:text-xs focus:placeholder:-translate-y-2.5 duration-1000 dark:placeholder:text-white/50 focus:outline-none;
+    }
+    .resister-button {
+        @apply rounded-md border-[1px] p-1 border-lightDark/30 dark:border-lightDark dark:bg-smothDark hover:bg-smothDark hover:text-white dark:hover:bg-whiteMilk dark:hover:text-dark duration-300;
+    }
+    .delete-button {
+        @apply rounded-md border-[1px] p-1 border-darkRed/50 w-[70%] text-white hover:bg-smothDark hover:text-white dark:hover:bg-whiteMilk dark:hover:text-dark duration-300;
+    }
+    .edit-button {
+        @apply rounded-md border-[1px] p-1 border-lightBlue/50 w-[70%] text-white hover:bg-smothDark hover:text-white dark:hover:bg-whiteMilk dark:hover:text-dark duration-300;
+    }
+    .create-button {
+        @apply rounded-md border-[1px] p-1 border-success/50 w-[70%] text-white hover:bg-smothDark hover:text-white dark:hover:bg-whiteMilk dark:hover:text-dark duration-300;
+    }
+    .social-icon {
+        @apply w-7 h-7 brightness-75 hover:brightness-100 hover:scale-105 duration-300;
+    }
+}
+
+.home-swiper .swiper-button-next,
+.home-swiper .swiper-button-prev {
+    transform: translateY(-40px) scale(0.35);
+    margin: 0;
+    padding: 5;
+}
+
+.hideScrollBar::-webkit-scrollbar {
+    display: none !important;
+}
+
+.header_nav.active {
+    opacity: 100%;
+}
+
+.button-shadow-up {
+    box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #ffffff;
+}
+
+.button-shadow-up-dark {
+    box-shadow: 0.3rem 0.3rem 0.6rem #000, -0.2rem -0.2rem 0.5rem #1b1f23;
+}
+
+.cart-shadow-up {
+    box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #ffffff;
+}
+
+.cart-shadow-up-dark {
+    box-shadow: 0.3rem 0.3rem 0.6rem #000, -0.2rem -0.2rem 0.5rem #1b1f23;
+}
+
+.shake-vertical {
+    -webkit-animation: shake-vertical 6s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+        infinite both;
+    animation: shake-vertical 6s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+        infinite both;
+}
+@-webkit-keyframes shake-vertical {
+    0%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateY(-2px);
+        transform: translateY(-2px);
+    }
+    20%,
+    40%,
+    60% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    80% {
+        -webkit-transform: translateY(1.6px);
+        transform: translateY(1.6px);
+    }
+    90% {
+        -webkit-transform: translateY(-1.6px);
+        transform: translateY(-1.6px);
+    }
+}
+@keyframes shake-vertical {
+    0%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateY(-2px);
+        transform: translateY(-2px);
+    }
+    20%,
+    40%,
+    60% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    80% {
+        -webkit-transform: translateY(1.6px);
+        transform: translateY(1.6px);
+    }
+    90% {
+        -webkit-transform: translateY(-1.6px);
+        transform: translateY(-1.6px);
+    }
+}
+
+.rotate {
+    -webkit-animation: rotate 1s ease infinite both;
+    animation: rotate 1s ease infinite both;
+}
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* season swiper  */
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute !important;
+    padding: 35px;
+    margin: 10px;
+
+    background-color: rgba(20, 21, 22, 0.95);
+    color: white !important;
+    transform: translateY(-30%) scale(0.5);
+    border-radius: 100%;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    box-shadow: 1px 1px 20px #000 !important;
+    background-color: rgba(33, 37, 41, 0.5) !important;
+}
+
+@media (max-width: 640px) {
+    .swiper-button-next {
+        right: -20px !important;
+    }
+    .swiper-button-prev {
+        left: -20px !important;
+    }
+}
+@media (min-width: 1280px) {
+    .swiper-button-next {
+        right: -15px !important;
+    }
+    .swiper-button-prev {
+        left: -15px !important;
+    }
+}
+
+.instagram-icon {
+    background-image: linear-gradient(
+        to left bottom,
+        #405de6,
+        #5851d8,
+        #833ab4,
+        #c13584,
+        #fd1d1d,
+        #f77737,
+        #ffdc80
+    );
+}
