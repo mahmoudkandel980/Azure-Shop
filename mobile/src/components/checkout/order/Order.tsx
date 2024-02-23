@@ -49,7 +49,7 @@ const Order = () => {
                     postalCode: convertedShippingData.postalCode,
                 });
             } else {
-                navigation.navigate("Cart", { screen: "Shipping" });
+                // navigation.navigate("Cart", { screen: "Shipping" });
             }
         })();
     }, [cartData]);
