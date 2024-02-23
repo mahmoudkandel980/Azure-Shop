@@ -21,7 +21,7 @@ You can go to project live [Azure Shop](https://azure-shop.netlify.app/), [API](
 
 -   Email : moderator@azure.com
 -   Password : 12345678
--   Note You can not change password, update password, change any user data by this account (This account for development purposes).
+-   Note You can not change password, update password, change any user data by this account (This account for testing purposes).
 
 **Special features in Azure shop application**
 
